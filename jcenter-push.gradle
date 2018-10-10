@@ -1,8 +1,8 @@
 apply plugin: 'com.jfrog.bintray'
 apply plugin: 'com.github.dcendents.android-maven'
 
-def siteUrl = "https://github.com/linuxjava/SuperAdapter"
-def gitUrl = "https://github.com/linuxjava/SuperAdapter.git"
+def siteUrl = "https://github.com/linuxjava/SuperDecoration"
+def gitUrl = "https://github.com/linuxjava/SuperDecoration.git"
 def desc = "SuperDecoration for Android"//添加项目描述
 def repoStr = "SuperDecoration"//JCenter上仓储名
 
