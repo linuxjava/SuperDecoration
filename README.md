@@ -13,7 +13,7 @@
 ## 使用
 ### 添加依赖
 ```xml
-implementation 'xiao.free.decoration:SuperDecorationLib:v0.1'
+implementation 'xiao.free.decoration:SuperDecorationLib:0.2'
 ```
 ### Color
 

@@ -8,9 +8,6 @@ import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-/**
- * Created by yqritc on 2015/01/15.
- */
 public class VerticalDividerItemDecoration extends FlexibleDividerDecoration {
 
     private MarginProvider mMarginProvider;
@@ -134,6 +131,12 @@ public class VerticalDividerItemDecoration extends FlexibleDividerDecoration {
             super(context);
         }
 
+        /**
+         * 设置分割线的margin
+         * @param topMargin(px) 上margin
+         * @param bottomMargin(px) 下margin
+         * @return
+         */
         public Builder margin(final int topMargin, final int bottomMargin) {
             return marginProvider(new MarginProvider() {
                 @Override
@@ -148,17 +151,15 @@ public class VerticalDividerItemDecoration extends FlexibleDividerDecoration {
             });
         }
 
-        public Builder margin(int verticalMargin) {
-            return margin(verticalMargin, verticalMargin);
-        }
-
+        /**
+         * 设置分割线的margin
+         * @param topMarginId
+         * @param bottomMarginId
+         * @return
+         */
         public Builder marginResId(@DimenRes int topMarginId, @DimenRes int bottomMarginId) {
             return margin(mResources.getDimensionPixelSize(topMarginId),
                     mResources.getDimensionPixelSize(bottomMarginId));
-        }
-
-        public Builder marginResId(@DimenRes int verticalMarginId) {
-            return marginResId(verticalMarginId, verticalMarginId);
         }
 
         public Builder marginProvider(MarginProvider provider) {

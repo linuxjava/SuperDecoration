@@ -16,9 +16,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-/**
- * Created by yqritc on 2015/01/08.
- */
 public abstract class FlexibleDividerDecoration extends RecyclerView.ItemDecoration {
 
     private static final int DEFAULT_SIZE = 2;
@@ -395,6 +392,11 @@ public abstract class FlexibleDividerDecoration extends RecyclerView.ItemDecorat
             return (T) this;
         }
 
+        /**
+         * 设置分割线宽度
+         * @param size(px)
+         * @return
+         */
         public T size(final int size) {
             return sizeProvider(new SizeProvider() {
                 @Override
