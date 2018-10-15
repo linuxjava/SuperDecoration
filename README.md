@@ -19,9 +19,9 @@ implementation 'xiao.free.decoration:SuperDecorationLib:0.2'
 
 ```xml
 mRecyclerView.addItemDecoration(new HorizontalDividerItemDecoration.Builder(this)
-        .margin(0, 1)
-        .colorResId(R.color.colorAccent)
-        .build());
+                .size(1).margin(20, 20)
+                .colorResId(R.color.colorAccent)
+                .build());
 ```
 ### Drawable
 ```xml

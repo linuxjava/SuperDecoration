@@ -38,7 +38,7 @@ public class VerticalActivity extends AppCompatActivity {
 
         //使用color绘制
 //        mRecyclerView.addItemDecoration(new HorizontalDividerItemDecoration.Builder(this)
-//                .margin(0, 1)
+//                .size(1).margin(20, 20)
 //                .colorResId(R.color.colorAccent)
 //                .build());
         //使用drawable绘制
